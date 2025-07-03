@@ -21,11 +21,12 @@ public class Utils {
         if (biomeHolder.isIn(ModTags.SPAWNS_DRIPSTONE_ZOMBIES)) {
             return ModEntities.DRIPSTONE_ZOMBIE.get();
         }
+        if (biomeHolder.isIn(ModTags.SPAWNS_LUSH_ZOMBIES)) {
+            return ModEntities.LUSH_ZOMBIE.get();
+        }
         if (pos.getY() < world.getSeaLevel() - 50) {
             return ModEntities.CAVE_ZOMBIE.get();
         }
-
-
 
         if (biomeHolder.isIn(ModTags.SPAWNS_BADLANDS_ZOMBIES)) {
             return ModEntities.BADLANDS_ZOMBIE.get();
@@ -36,7 +37,6 @@ public class Utils {
         if (biomeHolder.isIn(ModTags.SPAWNS_CHERRY_ZOMBIES)) {
             return ModEntities.CHERRY_ZOMBIE.get();
         }
-
         if (biomeHolder.isIn(ModTags.SPAWNS_DESERT_ZOMBIES)) {
             return ModEntities.DESERT_ZOMBIE.get();
         }
@@ -45,9 +45,6 @@ public class Utils {
         }
         if (biomeHolder.isIn(ModTags.SPAWNS_JUNGLE_ZOMBIES)) {
             return ModEntities.JUNGLE_ZOMBIE.get();
-        }
-        if (biomeHolder.isIn(ModTags.SPAWNS_LUSH_ZOMBIES)) {
-            return ModEntities.LUSH_ZOMBIE.get();
         }
         if (biomeHolder.isIn(ModTags.SPAWNS_MANGROVE_ZOMBIES)) {
             return ModEntities.MANGROVE_ZOMBIE.get();
